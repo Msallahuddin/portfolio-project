@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CSS  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- google-font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300,400,500,600,700,800,900&disply=swap" rel="stylesheet">
+    <!-- custom css -->
+     <link rel="stylesheet" href="css/style.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="#" class="logo"><span>M</span>sallah</a>
+
+        <ul class="nav_bar" id="menuList">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#section1">About</a></li>    
+            <li><a href="#section2">Services</a></li>    
+            <li><a href="#section3">Testimonial</a></li>
+            <li><a href="#section4">Contacts</a></li>
+        </ul>
+        
+        <div class="menu-icon">
+          <i id="menuOpen" class="bx bx-menu-alt-left" onclick="toggleMenu()"></i>
+            <i id="menuClose" class='bx bx-x' onclick="toggleMenu()" style="display: none;"></i>
+            
+        </div>
+    </header>
+    <!-- main section -->
+    <section class="main">
+        
+        <div class="main-text">
+            <span>Front-developer</span>
+            <h1>M Sallah</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel, ullam accusantium et nostrum at placeat earum beatae, illo blanditiis</p>
+            <div class="main-btn">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#" class="btn two ">Hire me Now</a>
+            </div>
+            <div class="share">
+        
+              <div class="social">
+                  <a href=""><i id="i" class="bx bxl-facebook"></i></a>
+                  <a href=""><i id="i" class='bx bxl-whatsapp'></i></a>
+                  <a href=""><i id="i" class='bx bxl-linkedin'></i></a>
+                  <a href=""><i id="i" class='bx bxl-github'></i></a>
+              
+              </div>
+          </div>
+        
+        </div>
+        <div class="main-img">
+            <img src="images/grzegorz-walczak-yoIIPcrWhjI-unsplash.jpg" alt="">
+        </div>
+        
+    </section>
+    <!-- about contain -->
+    <section class="about" id="section1">
+        <h1>About</h1>
+    <div class="container">
+           <div class="container-img"> 
+            <img src="images/mimi-thian-qmkpUk4siQQ-unsplash.jpg" alt="">
+        </div>
+      <div class="education">
+        <div class="intro">
+            <h3>Education</h3>
+           <ul>     
+            <li><h5>Ms degree</h5>
+            <p> Lorem lorem Lorem ipsum dolor sit university</p>
+            </li>
+            <li><h5>Bechelor degree</h5>
+            <p> Lorem lorem Lorem ipsum dolor sit university</p>
+            </li>
+            <li>
+                <h5>Fsc</h5> 
+            <p>Lorem, ipsum dolor College</p>
+            </li>
+            <li>
+                <h5>Matriculation</h5>
+            <p>Lorem ipsum dolor sit School</p>
+            </li>
+            
+            </ul>
+            
+        </div>
+        <div class="Skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>
+                    <span class="text">HTML</span>
+                    <span class="percent"><div style="width: 95%;"></div></span>
+                </li>
+                <li>
+                    <span class="text">CSS</span>
+                    <span class="percent"><div style="width: 85%;"></div></span>
+                </li>
+                <li>
+                    <span class="text">JAVASCRIPT</span>
+                    <span class="percent"><div style="width: 60%;"></div></span>
+                </li>
+                <li>
+                    <span class="text">BOOSTRAP</span>
+                    <span class="percent"><div style="width: 65%;"></div></span>
+                </li>
+                
+                    <span class="text">EXCEL</span>
+                    <span class="percent"><div style="width: 60%;"></div></span>
+                </li>
+                <li>
+                    <span class="text">MS WORD</span>
+                    <span class="percent"><div style="width: 95%;"></div></span>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+<!--Services section  -->
+    <div class="container-servies" id="section2">
+      <div class="service-wrapper">
+        <div class="service">
+          <h1>Our services</h1>
+          <div class="cards">
+            <div class="card">
+              <i class='bx bx-cast'></i>
+              <h2>Business Stratafy</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iste fugiat quis autem sunt voluptate?</p> 
+            </div>
+            <div class="card">
+              <i class='bx bxs-layer'></i>
+              <h2>Web Developement</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iste fugiat quis autem sunt voluptate?</p> 
+            </div>
+            <div class="card">
+              <i class='bx bxl-wordpress'></i>
+              <h2>Wordpress</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iste fugiat quis autem sunt voluptate?</p> 
+            </div>
+            <div class="card">
+              <i class='bx bxs-server'></i>
+              <h2>Networking</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iste fugiat quis autem sunt voluptate?</p> 
+            </div>
+            <div class="card">
+              <i class='bx bxs-group'></i>
+              <h2>Digital Marketing</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iste fugiat quis autem sunt voluptate?</p> 
+            </div>
+            <div class="card">
+              <i class='bx bx-cog'></i>
+              <h2>Other</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iste fugiat quis autem sunt voluptate?</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- testimonial section  -->
+<section class="client_section"  id="section3">
+    <div class="container-test">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Morojink
+                        </h5>
+                        <h6>
+                          Customer
+                        </h6>
+                      </div>
+                     
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum
+                      dolore eu fugia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/tim-mossholder-0n126RMSSLk-unsplash.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Morojink
+                        </h5>
+                        <h6>
+                          Customer
+                        </h6>
+                      </div>
+                      
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum
+                      dolore eu fugia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/christian-buehner-DItYlc26zVI-unsplash.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Morojink
+                        </h5>
+                        <h6>
+                          Customer
+                        </h6>
+                      </div>
+                     
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum
+                      dolore eu fugia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#customCarousel2" data-slide-to="1"></li>
+        <li data-target="#customCarousel2" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section>
+ <!--  contacts  --> 
+ <section id="section4">
+  <div class="container-contact">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you. Fill out the form below or get in touch with us through social media.</p>
+      <div class="contact-content">
+          <div class="contact-info">
+              <h3>Our Office</h3>
+              <p><strong>Address:</strong> 123 Main Street, city, PK</p>
+              <p><strong>Phone:</strong> +1 234 567 890</p>
+              <p><strong>Email:</strong> contact@example.com</p>
+          </div>
+          <form id="contactForm" action="#" method="post">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Name" id="name" name="name" required>
+              
+              <label for="email">Email</label>
+              <input type="email" placeholder="Email" id="email" name="email" required>
+              
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Type your feetback..." name="message" rows="4" required></textarea>
+              
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+ <!-- footer  -->
+        <Footer>
+            <div class="title">
+       <a href=""> <span>M</span>Sallah</a>
+        </div>
+            
+            <div class="personal_data">
+                <div class="information">
+                    <h3>Information</h3>
+                 <h5><i class="bx bx-phone "> </i>Phone : +12345677889</h5>
+                 <h5><i class="bx bx-envelope "> </i>Email : ABC@gmail.com</h5>
+                 <h5><i class="bx bx-home "> </i>Home :Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, neque vero explicabo.<h5>
+                 </div>
+                 <div class="social_links">
+                    
+                
+                <div class="contact">
+                    
+                      <h3>EXCELLENT SUPPORT</h3>
+                      <p>We love our customers and they can reach us any time 
+                      of day we will be at your service 24/7</p>
+                    </div>
+                    <div class="links">
+                    <a href=""><i id="i" class="bx bxl-facebook"> </i> Facebook</a> 
+                    <a href=""><i id="i" class='bx bxl-whatsapp'> </i> Whatsapp</a>
+                    <a href=""><i id="i" class='bx bxl-linkedin'> </i> LInkedin</a>
+                    <a href=""><i id="i" class='bx bxl-github'> </i> Github</a>
+                </div>
+                 </div>
+
+                
+            </div>
+           <h5 class="copyright"> &COPY;Muhammad Sallahudden.</h5>
+        </Footer>
+
+
+
+        <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap 5 JS  -->
+<script src="js/bootstrap.js"></script>
+<!-- custom Js  --> 
+ <script src="js/script.js"></script>
+ 
+
+
+</body>
+</html>
