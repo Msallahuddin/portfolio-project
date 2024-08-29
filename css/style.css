@@ -562,34 +562,23 @@ section{
 
 /* testimonial section */
 
-.client_section .box  {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.client_section .box {
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 45px 0;
   }
-  .container-test{
+  
+  .container-test {
     display: flex;
     justify-content: center;
-    
-
   }
-  .heading_container  h2{
-
-    display: flex;
-    
+  
+  .heading_container h2 {
     text-align: center;
-    font-size: 2rem ;
+    font-size: 2rem;
     margin-top: 10px;
-    
     font-weight: 600;
-    text-transform: capitalize; 
-    
-    
-
+    text-transform: capitalize;
   }
   
   .client_section .box .img-box {
@@ -609,11 +598,7 @@ section{
   }
   
   .client_section .box .client_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   
@@ -632,8 +617,6 @@ section{
     text-transform: uppercase;
   }
   
-  
-  
   .client_section .box p {
     margin-top: 20px;
     color: #fff;
@@ -647,7 +630,7 @@ section{
   
   .client_section .carousel-indicators {
     position: unset;
-    margin: 0; 
+    margin: 0;
     align-items: center;
     margin-top: 30px;
   }
@@ -665,13 +648,29 @@ section{
     width: 20px;
     height: 20px;
     background-color: #ffae00;
-    
   }
-
-  @media only screen and (max-width:900px){
-    .client_section{
-        display: flexbox;
-        justify-content: center;
+  
+  /* Media Query for Mobile Devices */
+  @media only screen and (max-width: 900px) {
+    .client_section .box {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;
+      margin: 20px 0; /* Adjust margin for mobile */
+    }
+    
+    .client_section .box .img-box {
+      margin-right: 0; /* Remove margin to prevent horizontal alignment issues */
+      margin-bottom: -60px; /* Space between image and text */
+      order: -1; /* Move image to the top */
+    }
+  
+    .client_section .box .detail-box {
+      padding: 60px; /* Adjust padding for better mobile display */
+      text-align: center; /* Center align text for better readability */
+    }
+  
+    .client_section .carousel-inner {
+      padding: 0 12px; /* Add padding to the left and right for better spacing */
     }
   }
 /* contacts */
