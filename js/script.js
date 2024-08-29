@@ -1,3 +1,5 @@
+
+//  togglemenu
 function toggleMenu() {
     const menuList = document.getElementById('menuList');
     const menuOpenIcon = document.getElementById('menuOpen');
@@ -13,6 +15,7 @@ function toggleMenu() {
         menuCloseIcon.style.display = 'block';
     }
 }
+// contact form
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -26,4 +29,40 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     } else {
         alert('Please fill in all required fields.');
     }
+});
+
+// carousel botton
+
+document.addEventListener("DOMContentLoaded", function() {
+    const carouselInner = document.querySelector('.carousel-inner');
+    const items = document.querySelectorAll('.carousel-item');
+    const indicators = document.querySelectorAll('.carousel-indicators span');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        if (index >= items.length) index = 0;
+        if (index < 0) index = items.length - 1;
+        carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+    }
+
+    document.querySelector('.carousel-control.next').addEventListener('click', function() {
+        showSlide(currentIndex + 1);
+    });
+
+    document.querySelector('.carousel-control.prev').addEventListener('click', function() {
+        showSlide(currentIndex - 1);
+    });
+
+    indicators.forEach((indicator, i) => {
+        indicator.addEventListener('click', function() {
+            showSlide(i);
+        });
+    });
+
+    // Initialize the carousel
+    showSlide(currentIndex);
 });
