@@ -119,7 +119,7 @@ header a{
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #fff;
+        background: #191919;
     }
 
     .nav_bar.active {
